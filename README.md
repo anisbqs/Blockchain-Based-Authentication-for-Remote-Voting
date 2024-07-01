@@ -23,8 +23,7 @@ This project is a **blockchain-based decentralized application (DApp)** designed
 3. Install **MetaMask** or another Ethereum wallet in your browser.
 
 ### Step 2: Clone the Repository
-git clone https://github.com/yourusername/blockchain-voting-system.git
-cd blockchain-voting-system
+
 
 ## Step 3: Set Up MySQL Database
 - **Open XAMPP and start the Apache and MySQL modules.**
