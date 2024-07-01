@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left {
+    flex: 0 0 540px; /* Fixed width for the left side */
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+}
+
+.login-form, .registration-form {
+    max-width: 300px;
+    margin: auto;
+}
+
+.login-form h2, .registration-form h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #003d7a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #001f3d;
+}
+
+.yellow-button {
+    background-color: #FFD700; /* Yellow button color */
+}
+
+.yellow-button:hover {
+    background-color: #FFC107; /* Darker yellow on hover */
+}
+
+form a {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9em; /* Smaller font size */
+    margin-top: 16px; /* Increase gap from the input above */
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.alert {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+.back-to-login {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-to-login:hover {
+    text-decoration: underline;
+}
+
+.blockchain-account {
+            margin-top: 15px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }

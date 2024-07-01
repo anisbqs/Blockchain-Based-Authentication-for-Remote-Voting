@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #E0E0E0; /* Light grey top bar with aesthetic shade */
+    color: #003366; /* Navy blue text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 30px; /* Smaller logo */
+}
+
+.header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 20px; /* Smaller title */
+}
+
+.profile button {
+    background-color: #003d7a; /* Navy blue button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 150px; /* Smaller width for sidebar */
+    background-color:#E0E0E0; /* Light grey sidebar with aesthetic shade */
+    color: #003366; /* Navy blue text */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Thicker divider between items */
+}
+
+.sidebar a {
+    color: #003366; /* Navy blue text */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: left; /* Left-aligned text */
+}
+
+.sidebar a:hover {
+    background-color: #b0c4de; /* Light blue on hover */
+}
+
+.sidebar h2 {
+    color: #003366; /* Navy blue text */
+    margin-bottom: 10px;
+    text-align: left; /* Left-aligned text */
+    font-size: 16px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content h2 {
+    color: #003366; /* Navy blue text */
+    margin: 0;
+}
+
+.main-content p {
+    color: #333; /* Dark text for paragraph */
+    font-size: 18px;
+}

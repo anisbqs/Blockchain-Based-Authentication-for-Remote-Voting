@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #E0E0E0;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    color: #003d7a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav a:hover {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.navbar-nav .active:hover {
+    background-color: #003d7a;
+    border-radius: 4px;
+}
+
+.navbar-nav .active {
+    background-color: #003d7a;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.main-content h2 {
+    color: #003366;
+    margin: 0 0 20px 0;
+}
+
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000042;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-btn {
+    background-color: #FFD700;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.create-btn:hover {
+    background-color: #FFC107;
+}
+
+.alert {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}

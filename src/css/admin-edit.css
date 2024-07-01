@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent the entire page from scrolling */
+}
+
+.header {
+    background-color: #E0E0E0; /* Dark background for the top bar */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 30px; /* Adjust logo size as needed */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    color: #003d7a; /* White text */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav a:hover {
+    background-color: #ffffff; /* Blue background on hover */
+    border-radius: 4px;
+}
+
+.navbar-nav .active:hover {
+    background-color: #003d7a; /* Blue background on hover */
+    border-radius: 4px;
+}
+
+.navbar-nav .active {
+    background-color: #003d7a; /* Highlight the active page */
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Enable scrolling within the container */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.main-content h2 {
+    color: #003366; /* Navy blue text */
+    margin: 0 0 20px 0; /* Added gap below the title */
+}
+
+.main-content p {
+    color: #333; /* Dark text for paragraph */
+    font-size: 18px;
+}
+
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow-y: auto; /* Enable scrolling within the form */
+    max-height: 80vh; /* Set max height for the form */
+}
+
+form label {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000042;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+form input[type="text"], form input[type="datetime-local"], select {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#election-name, #candidate-name {
+    margin-bottom: 15px; /* Add bottom margin */
+}
+
+
+.candidate-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.candidate-input input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.candidate-input .add-btn {
+    margin-left: 10px; /* Added gap before the add button */
+}
+
+.add-btn, .delete-btn {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-btn {
+    background-color: #003d7a;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+.candidate-item {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.candidate-item .candidate-info, 
+.candidate-item .student-id-info {
+    font-size: 14px; /* Smaller font size */
+    margin: 0;
+    width: 50%; /* Ensure the student ID is aligned */
+    text-align: left; /* Align text to the left */
+}
+
+.status-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px; /* Smaller text inside the button */
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px; /* Lessen gap between status and button */
+    margin-bottom: 15px;
+}
+
+.status-active {
+    background-color: #28a745; /* Green background for active */
+}
+
+.status-inactive {
+    background-color: #dc3545; /* Red background for inactive */
+}
+
+.create-btn {
+    background-color: #003d7a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+

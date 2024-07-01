@@ -1,0 +1,190 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/voter-main.jpg'); /* Background image */
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    overflow: hidden; /* Prevent scrolling of the body */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Transparent background */
+    padding: 10px 20px;
+    position: fixed; /* Make the navbar fixed */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the navbar is on top */
+    box-shadow: none; /* Remove shadow */
+}
+
+.navbar-brand {
+    margin-right: 30px; /* Space between logo and nav items */
+}
+
+.navbar-brand img {
+    height: 30px; /* Smaller logo */
+    filter: drop-shadow(4px 4px 8px rgba(255, 255, 255, 0.7)); /* White shadow for visibility */
+    transition: filter 0.3s; /* Smooth transition for shadow effect */
+}
+
+.navbar-brand img:hover {
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 128, 0.7)); /* Navy blue shadow on hover */
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align items in the center */
+    gap: 20px; /* Adjust gap between items */
+    margin: 0;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-button {
+    background-color: transparent; /* Transparent background by default */
+    border-radius: 5px; /* Rounded corners for rectangle */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 128, 1); /* Navy blue with slight transparency on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.hero-section {
+    position: relative;
+    width: 100%; /* Ensure it fits within the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height to cover the viewport */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Add a dark overlay with opacity */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the overlay */
+}
+
+.container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 500px; /* Increased width */
+    height: calc(100% - 80px); /* Adjust height based on the desired top margin */
+    margin: auto;
+    overflow-y: auto; /* Make the content inside the container scrollable */
+    position: fixed; /* Fix the container in place */
+    top: 80px; /* Adjust this value based on your navbar height */
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 20px; /* Rounded corners for the scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #B8B8B8;
+    border-radius: 20px; /* Rounded corners for the scrollbar thumb */
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000042; /* Navy color for the title */
+}
+
+.profile-picture {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center; /* Center align form elements */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000042; /* Navy color for the labels */
+    width: 350px; /* Fixed width for labels */
+    text-align: left; /* Align text to the left */
+}
+
+.form-group input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 350px; /* Fixed width for inputs */
+}
+
+.divider {
+    margin: 20px 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 430px; /* Fixed width for divider */
+}
+
+.form-group button {
+    width: 350px; /* Fixed width for button */
+    padding: 10px;
+    background-color: #000042; /* Navy color for the button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.form-group button:hover {
+    background-color: #000066; /* Darker navy color on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
